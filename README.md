@@ -1,26 +1,35 @@
-# CE-ESY-assignments
+# CE-ESY-assignment1
 
-## Description
-This project implements a Circular Buffer (Queue) in C language.
+فكرة البرنامج
 
-The program allows:
-- Inserting characters into a circular buffer
-- Deleting characters from the buffer
-- Displaying the buffer content
-- Handling overflow and underflow conditions
-- Adding an extra string to the stored name
+هذا البرنامج عبارة عن تطبيق بسيط لفكرة الـ Circular Buffer باستخدام لغة C.
+قمت فيه بتخزين حروف الاسم داخل مصفوفة بطريقة دائرية، ثم قراءتها مرة ثانية.
 
-## Data Structure Used
-Circular Queue using an array with:
-- front pointer
-- rear pointer
-- count variable
+ماذا يفعل البرنامج
 
-## Features
-- Efficient memory usage using circular behavior
-- Supports string input character by character
-- Demonstrates queue operations (enqueue & dequeue)
+إدخال اسم من المستخدم
+تخزين كل حرف داخل المخزون الدائري
+اضافة سلسلة نصية (CE-ESY) إلى الاسم
+قراءة البيانات من المخزون وعرضها
+التحقق من حالات الامتلاء (Overflow) والفراغ (Underflow)
 
-## Files
-- assignments1.c : Source code of the circular buffer implementation
-- README.md : Project description
+طريقة العمل
+
+اعتمدت على مصفوفة ثابتة الحجم مع ثلاث متغيرات:
+
+front
+rear
+count
+
+بحيث يتم إدخال العناصر من rear والحذف من front، ومع الوصول لنهاية المصفوفة يتم الرجوع للبداية (circular behavior).
+
+ملاحظات
+
+إذا كان حجم المخزون صغير، سيظهر overflow عند إدخال بيانات أكثر من السعة
+بعد قراءة كل العناصر يتم تفريغ المخزون ويصبح فارغ
+
+ الملفات
+
+ assignments1.c : يحتوي على الكود الكامل
+ README.md : شرح الكود 
+
